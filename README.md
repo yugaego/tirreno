@@ -18,16 +18,31 @@ Tirreno is a "low-tech" PHP and PostgreSQL software application that can be down
 
 ### Requirements
 
-- **PHP**: Version 8.1.x or greater
+- **PHP**: Version 8.1 or greater
 - **PostgreSQL**: Version 12 or greater
 - **PHP Extension**: PDO_PGSQL
-- **OS/Server Compatibility**: Tirreno is OS and server independent
+- **HTTP Web Server**: Any, configured to work with PHP
+- **Operating System**: Tirreno is OS independent
 - **Minimum Hardware Requirements**:
   - **PostgreSQL**: 512 MB RAM (2 GB recommended)
   - **Application**: 512 MB RAM (1 GB recommended)
   - **Storage**: Approximately 1 GB PostgreSQL storage per 1 million events
 
 ### Setup
+
+- Clone the repository:
+  - Run `git clone --branch master git@github.com:TirrenoTechnologies/tirreno.git`.
+  - `cd tirreno`.
+- Install the required packages.
+  - Download [Composer](https://getcomposer.org/download/): PHP package manager.
+  - Run `composer install --no-dev --optimize-autoloader`.
+- Configure your web server to serve Tirreno.
+- Launch installer by loading `https://your-domain.example/install/index.php`.
+- After the successful installation, delete the `install/` directory and its contents.
+
+## Documentation
+
+See [user manual](http://tirreno-tirreno-docs.readthedocs-hosted.com/en/latest/).
 
 ## Optional non-free capabilities
 
