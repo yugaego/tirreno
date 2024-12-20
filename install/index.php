@@ -22,7 +22,7 @@ $style = (
     padding: 50px;
     font-size: 13px;
   }
-  input[type="text"],input[type="email"]{
+  input[type="text"],input[type="email"],input[type="password"]{
     width: 550px;
     background-color: #151220;
     color: #bfbed0;
@@ -54,7 +54,7 @@ $formBody = (
     </tr>
     <tr>
       <td><label for="db_pass">Password</label></td>
-      <td><input type="text" id="db-pass" name="db_pass" autocomplete="off" autocapitalize="off" required></td>
+      <td><input type="password" id="db-pass" name="db_pass" autocomplete="off" autocapitalize="off" required></td>
     </tr>
     <tr>
       <td><label for="db_host">Host</label></td>
